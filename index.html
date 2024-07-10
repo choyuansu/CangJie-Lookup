@@ -29,6 +29,7 @@
         }
         resultsHtml = resultsHtml.replaceAll(';', '；');
         resultsHtml = resultsHtml.replaceAll(',', '，');
+        resultsHtml = resultsHtml.replaceAll('.', '。');
         document.getElementById("results").innerHTML = resultsHtml;
     }
 
