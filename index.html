@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
-    <title>自然大新倉頡查碼</title>
-    <meta name="description" content="自然大新倉頡查碼" />
+    <title>自由大新倉頡查碼</title>
+    <meta name="description" content="自由大新倉頡查碼" />
     <meta name="author" content="choyuansu" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="favicon.ico" />
@@ -9,15 +9,17 @@
     <link rel="manifest" href="js13kpwa.webmanifest" />
     <script src="./newcj.js"></script>
 </head>
+
 <body>
-    <h1>自然大新倉頡查碼</h1>
-    <textarea id="input" rows="8" cols="40" oninput="updateResult(this.value)" onload="updateResult(this.value)"></textarea>
+    <h1>自由大新倉頡查碼</h1>
+    <textarea id="input" rows="8" cols="40" oninput="updateResult(this.value)"
+        onload="updateResult(this.value)"></textarea>
     <div id="results"></div>
 </body>
 <script>
     function updateResult(input) {
         resultsHtml = "";
-        for(let i = 0; i < input.length; i++) {
+        for (let i = 0; i < input.length; i++) {
             char = input.charAt(i);
             if (char in cjTable) {
                 resultHtml = `<b>${char}</b><hr>${cjTable[char].join("<br>")}`;
@@ -38,7 +40,8 @@
     };
 </script>
 <style>
-    html, body {
+    html,
+    body {
         max-width: 100%;
         height: 100%;
         text-align: center;
