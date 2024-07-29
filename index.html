@@ -4,9 +4,9 @@
     <meta name="description" content="自由大新倉頡查碼" />
     <meta name="author" content="choyuansu" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="manifest" href="js13kpwa.webmanifest" />
     <script src="./newcj.js"></script>
 </head>
 
@@ -17,6 +17,10 @@
     <div id="results"></div>
 </body>
 <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register("/serviceworker.js");
+    }
+
     function updateResult(input) {
         resultsHtml = "";
         for (let i = 0; i < input.length; i++) {
