@@ -2,7 +2,7 @@ self.addEventListener("install", (e) => {
     console.log("[Service Worker] Install");
     e.waitUntil(
         (async () => {
-            var contentToCache = ["/index.html", "/newcj.js"];
+            var contentToCache = ["/CangJie-Lookup/index.html", "/CangJie-Lookup/newcj.js"];
             const cache = await caches.open(cacheName);
             console.log("[Service Worker] Caching all: app shell and content");
             await cache.addAll(contentToCache);

@@ -5,10 +5,10 @@
     <meta name="author" content="choyuansu" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="icon" href="/favicon.ico" />
-    <script src="/newcj.js"></script>
-    <script src="/serviceworker.js"></script>
+    <link rel="manifest" href="/CangJie-Lookup/manifest.json">
+    <link rel="icon" href="/CangJie-Lookup/favicon.ico" />
+    <script src="/CangJie-Lookup/newcj.js"></script>
+    <script src="/CangJie-Lookup/serviceworker.js"></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 </body>
 <script>
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register("/serviceworker.js");
+        navigator.serviceWorker.register("/CangJie-Lookup/serviceworker.js", { scope: "/CangJie-Lookup/" });
     }
 
     function updateResult(input) {

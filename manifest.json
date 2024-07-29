@@ -3,20 +3,20 @@
     "short_name": "查碼",
     "name": "自由大新倉頡查碼",
     "description": "description",
-    "scope": "/",
+    "scope": "/CangJie-Lookup/",
     "icons": [
         {
             "sizes": "192x192",
-            "src": "/android-chrome-192x192.png",
+            "src": "/CangJie-Lookup/android-chrome-192x192.png",
             "type": "image/png"
         },
         {
             "sizes": "512x512",
-            "src": "/android-chrome-512x512.png",
+            "src": "/CangJie-Lookup/android-chrome-512x512.png",
             "type": "image/png"
         }
     ],
-    "start_url": "/",
+    "start_url": "/CangJie-Lookup/",
     "display": "standalone",
     "orientation": "any",
     "prefer_related_applications": false
